@@ -242,6 +242,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
         </div>
           
@@ -375,6 +376,24 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: '7fb7fd02f72b49c7b1a1',
+      clientSecret: '4dfc367d870a495668a86056ca484267a65201ad',
+      repo: 'WZhangr.github.io',
+      owner: 'WZhangr',
+      admin: ['WZhangr'],
+      id: 'de0a3f7c3b3adf094d91f55f5d621778',
+        language: 'zh-CN',
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
 </body>
 </html>
